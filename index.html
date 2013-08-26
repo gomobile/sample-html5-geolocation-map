@@ -1,0 +1,157 @@
+<!--
+Copyright (c) 2011, 2012, 2013 Intel Corporation
+
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation
+ files (the "Software"), to deal in the Software without
+ restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following
+ conditions:
+
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
+-->
+<html>
+<head>
+
+<title>Geolocation</title>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src='intelxdk.js'></script> 
+
+    <style type="text/css">
+    * { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); -ms-touch-action:none;} 
+	</style>
+<script type="text/javascript">
+
+    var tmrSplash;
+    tmrSplash=setTimeout("document.getElementById('splash').style.display='none';document.getElementById('splash').style.top='1024px';",3000);
+
+    var _map = null;
+    var _seconds = 30;
+	var _llbounds = null;
+
+	var boolTripTrack=true;  //use this flag to continually update the GPS location and leave markers every 30 seconds
+
+    function initialize()
+    { }
+
+    function drawMap()
+    {
+        var latlng = new google.maps.LatLng(currentLatitude,currentLongitude);
+        var mapOptions = {
+            zoom:10,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.HYBRID,
+			zoomControl: true,
+            zoomControlOptions: {
+              style: google.maps.ZoomControlStyle.SMALL,
+			  position: google.maps.ControlPosition.LEFT_TOP
+            },
+        };
+
+        if (boolTripTrack==true)
+        {
+            _map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+        }
+    }
+
+    //40.7655,-73.97204 = NYC
+    var currentLatitude = "40.713768";
+    var currentLongitude = "-73.016696";
+    var options = {
+					 timeout: 10000,
+					 maximumAge: 11000,
+					 enableHighAccuracy: true
+				  };
+
+	var suc = function(p){
+		console.log("geolocation success",4);
+
+		if( _map == null ) {
+			currentLatitude = p.coords.latitude;
+			currentLongitude = p.coords.longitude;
+			drawMap();
+		}
+
+	  	var myLatLng = new google.maps.LatLng(p.coords.latitude, p.coords.longitude);
+	  	var beachMarker = new google.maps.Marker({
+		  position: myLatLng,
+		  map: _map
+		});
+
+		if( _llbounds == null )
+			_llbounds = new google.maps.LatLngBounds(new google.maps.LatLng(p.coords.latitude, p.coords.longitude));
+		else
+			_llbounds.extend(new google.maps.LatLng(p.coords.latitude, p.coords.longitude));
+		_map.fitBounds(_llbounds);
+	};
+
+	var fail = function(){
+		console.log("Geolocation failed. \nPlease enable GPS in Settings.",1);
+	};
+
+    var getLocation = function()
+    {
+        console.log("in getLocation",4);
+    }
+
+    function onDeviceReady()
+    {
+        try
+        {
+
+			document.getElementById("map_canvas").style.width="480px";
+			if (intel.xdk.geolocation != null)
+			{
+				intel.xdk.geolocation.watchPosition(suc,fail,options);
+			}
+        }
+        catch(e)
+        {
+            alert(e.message);
+        }
+
+        try
+        {
+            //lock orientation
+            intel.xdk.device.setRotateOrientation("portrait");
+            intel.xdk.device.setAutoRotate(false);
+        }
+        catch(e) {}
+
+        try
+        {
+            //manage power
+            intel.xdk.device.managePower(true,false);
+        }
+        catch(e) {}
+		
+		try
+		{
+			//hide splash screen
+			intel.xdk.device.hideSplashScreen();
+        }
+        catch(e) {}		
+    }
+
+
+    document.addEventListener("intel.xdk.device.ready",onDeviceReady,false);
+
+</script>
+</script>
+</head>
+<body style="font-family:Arial;font-size:18pt;border:0;margin:0;padding:0;">
+<div id="map_canvas" style="width:320px;height:100%;text-align:center;"><h1>Determining Your Location</h1></div>
+</body>
+</html>

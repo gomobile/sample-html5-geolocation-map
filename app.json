@@ -1,0 +1,13 @@
+{
+"reponame":"sample-Geolocation",
+"title":"Geolocation Demonstration",
+"tooltip":"A demonstration of how to build an app that uses the geolocation services of the device",
+"description":"This demonstration gets the user's location using the device's geolocation services and then plots their position every five seconds on a Google Map.  It takes advantage of the JavaScript bridge library to access the native features of the device.",
+"articleUrl":"",
+"keywords":["demo","geolocation","Google","hybrid app","latitude","longitude","GPS"],
+"visible" : "false",
+"highlights" : ["Google Maps","geolocation","event","hybrid app"]
+"apppreview":"false",
+"appname":"demo.geolocationnew",
+"relname":"4.0.0"
+}
