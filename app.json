@@ -6,7 +6,7 @@
 "articleUrl":"",
 "keywords":["demo","geolocation","Google","hybrid app","latitude","longitude","GPS"],
 "visible" : "true",
-"highlights" : ["Google Maps","geolocation","event","hybrid app"]
+"highlights" : ["Google Maps","geolocation","event","hybrid app"],
 "apppreview":"true",
 "appname":"demo.geolocationnew",
 "relname":"4.0.0"
