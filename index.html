@@ -110,8 +110,24 @@ Copyright (c) 2011, 2012, 2013 Intel Corporation
     {
         try
         {
-
-			document.getElementById("map_canvas").style.width="480px";
+            if (intel.xdk.device.platform.indexOf("Android")!=-1)
+            {
+                intel.xdk.display.useViewport(480,480);
+                document.getElementById("map_canvas").style.width="480px";
+            }
+            else if (intel.xdk.device.platform.indexOf("iOS")!=-1)
+            {
+                if (intel.xdk.device.model.indexOf("iPhone")!=-1 || intel.xdk.device.model.indexOf("iPod")!=-1)
+                {
+                    intel.xdk.display.useViewport(320,320);
+                    document.getElementById("map_canvas").style.width="320px";
+                }
+                else if (intel.xdk.device.model.indexOf("iPad")!=-1)
+                {
+                    intel.xdk.display.useViewport(768,768);
+                    document.getElementById("map_canvas").style.width="768px";
+                }
+            }
 			if (intel.xdk.geolocation != null)
 			{
 				intel.xdk.geolocation.watchPosition(suc,fail,options);
