@@ -101,6 +101,7 @@ var tmrSplash;
             
 			if (intel.xdk.geolocation != null)
 			{
+				document.getElementById("map_canvas").style.height = screen.height + "px";
 				intel.xdk.geolocation.watchPosition(suc,fail,options);
 			}
         }
