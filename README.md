@@ -1,9 +1,8 @@
 sample-geolocation
 ==================
-
-Button Sample
-=====
-The responsive button sample is a basic example of using HTML5 to give visual feedback to a button press.
+This sample gets the user's location using the device's geolocation services and then 
+plots their position every five seconds on a Google Map.  
+It takes advantage of the JavaScript bridge library to access the native features of the device.
 
 Intel(R) XDK 
 -------------------------------------------
