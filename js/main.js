@@ -1,6 +1,3 @@
-var tmrSplash;
-    tmrSplash=setTimeout("document.getElementById('splash').style.display='none';document.getElementById('splash').style.top='1024px';",3000);
-
     var _map = null;
     var _seconds = 30;
 	var _llbounds = null;
