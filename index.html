@@ -28,8 +28,18 @@ Copyright (c) 2011, 2012, 2013 Intel Corporation
 <head>
 
 <title>Geolocation</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">    
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script src='intelxdk.js'></script>
+<script>
+    try
+		{
+			//hide splash screen
+			intel.xdk.device.hideSplashScreen();
+        }
+        catch(e) {}		
+</script>
 <script type="text/javascript" src="js/main.js"></script> 
 
 <style type="text/css">
@@ -39,6 +49,6 @@ Copyright (c) 2011, 2012, 2013 Intel Corporation
 
 </head>
 <body style="font-family:Arial;font-size:18pt;border:0;margin:0;padding:0;">
-<div id="map_canvas" style="width:320px;text-align:center;"><h1>Determining Your Location</h1></div>
+<div id="map_canvas" style="width:320px; text-align:center;"><h1>Determining Your Location</h1></div>
 </body>
 </html>

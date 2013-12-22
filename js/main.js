@@ -1,19 +1,20 @@
     var _map = null;
     var _seconds = 30;
 	var _llbounds = null;
+    var myLatLng; 
+    var oldLatLng = "";
 
-	var boolTripTrack=true;  //use this flag to continually update the GPS location and leave markers every 30 seconds
+	var boolTripTrack=true;  
 
-    function initialize()
-    { }
-
+    //Create the google Maps and LatLng object 
     function drawMap()
     {
+        //Creates a new google maps object
         var latlng = new google.maps.LatLng(currentLatitude,currentLongitude);
+        myLatLng = latlng;
         var mapOptions = {
-            zoom:10,
             center: latlng,
-            mapTypeId: google.maps.MapTypeId.HYBRID,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
 			zoomControl: true,
             zoomControlOptions: {
               style: google.maps.ZoomControlStyle.SMALL,
@@ -35,27 +36,42 @@
 					 maximumAge: 11000,
 					 enableHighAccuracy: true
 				  };
-
+    
+    //Success callback
 	var suc = function(p){
 		console.log("geolocation success",4);
-
+        //Draws the map initially
 		if( _map == null ) {
 			currentLatitude = p.coords.latitude;
 			currentLongitude = p.coords.longitude;
 			drawMap();
 		}
-
-	  	var myLatLng = new google.maps.LatLng(p.coords.latitude, p.coords.longitude);
-	  	var beachMarker = new google.maps.Marker({
-		  position: myLatLng,
-		  map: _map
-		});
-
-		if( _llbounds == null )
-			_llbounds = new google.maps.LatLngBounds(new google.maps.LatLng(p.coords.latitude, p.coords.longitude));
-		else
-			_llbounds.extend(new google.maps.LatLng(p.coords.latitude, p.coords.longitude));
-		_map.fitBounds(_llbounds);
+        else {
+            myLatLng = new google.maps.LatLng(p.coords.latitude, p.coords.longitude);
+        }
+        
+        
+        //Creates a new google maps marker object for using with the pins
+        if((myLatLng.toString().localeCompare(oldLatLng.toString())) != 0){
+            //Create a new map marker
+            var Marker = new google.maps.Marker({
+              position: myLatLng,
+              map: _map
+            });
+            
+            if( _llbounds == null ){
+                //Create the rectangle in geographical coordinates
+                _llbounds = new google.maps.LatLngBounds(new google.maps.LatLng(p.coords.latitude, p.coords.longitude));//original
+            }
+            else{
+                //Extends geographical coordinates rectangle to cover current position
+                _llbounds.extend(myLatLng);
+            }
+            
+            //Sets the viewport to contain the given bounds & triggers the "zoom_changed" event
+            _map.fitBounds(_llbounds);
+        }
+        oldLatLng = myLatLng;
 	};
 
 	var fail = function(){
@@ -67,6 +83,10 @@
         console.log("in getLocation",4);
     }
 
+    
+    //Execute when the DOM loads
+    //The Intel XDK intel.xdk.device.ready event fires once the Intel XDK has fully loaded. 
+    //After the device has fired, you can safely make calls to Intel XDK function.    
     function onDeviceReady()
     {
         try
