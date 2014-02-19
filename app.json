@@ -3,7 +3,7 @@
 "title":"Geolocation Demonstration",
 "tooltip":"A demonstration of how to build an app that uses the geolocation services of the device",
 "description":"This demonstration gets the user's location using the device's geolocation services and then plots their position every five seconds on a Google Map.  It takes advantage of the JavaScript bridge library to access the native features of the device.",
-"articleUrl":"http://software.intel.com/en-us/articles/intel-xdk-geolocation-sample",
+"articleUrl":"http://software.intel.com/en-us/html5/articles/intel-xdk-geolocation-sample",
 "keywords":["GPS","intel.xdk API"],
 "visible" : "true",
 "highlights" : ["GPS","intel.xdk API"],
