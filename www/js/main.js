@@ -1,5 +1,6 @@
-/*jslint browser:true, devel:true, white:true, vars:true, eqeq:true */
-/*global intel:false, google:false*/
+/*jslint sloppy:true, browser:true, devel:true, white:true, vars:true, eqeq:true, nomen:true, unparam:true */
+/*global intel, google, Marker, device */
+
 var _map = null;
 var _seconds = 30;
 var _llbounds = null;
