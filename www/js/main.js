@@ -75,23 +75,6 @@ var getLocation = function() {
 
 function onDeviceReady() {
     try {
-        if (device.platform.indexOf("Android") != -1) {
-            intel.xdk.display.useViewport(480, 480);
-            document.getElementById("map_canvas").style.width = "480px";
-        } 
-        else if (device.platform.indexOf("iOS") != -1) {
-            if (device.model.indexOf("iPhone") != -1 || device.model.indexOf("iPod") != -1) {
-                intel.xdk.display.useViewport(320, 320);
-                document.getElementById("map_canvas").style.width = "320px";
-            } else if (device.model.indexOf("iPad") != -1) {
-                intel.xdk.display.useViewport(768, 768);
-                document.getElementById("map_canvas").style.width = "768px";
-            }
-        }
-        if (device.platform.indexOf("Win") != -1) {
-            document.getElementById("map_canvas").style.width = screen.width + "px";
-            document.getElementById("map_canvas").style.height = screen.height + "px";
-        }
         if (navigator.geolocation !== null) {
             document.getElementById("map_canvas").style.height = screen.height + "px";
             navigator.geolocation.watchPosition(suc, fail, options);
