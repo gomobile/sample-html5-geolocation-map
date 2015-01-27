@@ -1,5 +1,5 @@
 {
-"reponame":"sample-html5-geolocation",
+"reponame":"sample-html5-geolocation-map",
 "title":"Geolocation Demonstration",
 "tooltip":"A demonstration of how to build an app that uses the geolocation services of the device",
 "description":"This demonstration gets the user's location using the device's geolocation services and then plots their position every five seconds on a Google Map.  It takes advantage of the JavaScript bridge library to access the native features of the device.",
