@@ -1,0 +1,168 @@
+/******************GLOBAL**************************/
+@-ms-viewport {
+    width: device-width;
+}
+
+html { 
+	width:100%; height:100%;
+	overflow-x:hidden;
+	font-family:Helvetica, Arial, sans-serif; 
+	-webkit-text-size-adjust:100%; 
+}
+
+* { 
+	margin:0; padding:0; 
+	-webkit-box-sizing:border-box; box-sizing:border-box;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+        -ms-touch-action:none;
+}
+
+img { border:none; }
+
+body {
+	width:100%;	height:100%;
+    overflow:hidden;
+    -webkit-user-select:none;
+}
+
+input,textarea
+{
+    -webkit-user-select:text;
+    -moz-user-select:text;
+}
+
+::selection { 
+	background:#aaa; 
+	color:#fff; 
+}
+
+a:focus, a:active, a:hover { outline:0; }
+
+.clear { clear:both; }
+.wrapper { float:left; }
+
+
+
+/******************* SMARTPHONE [DEFAULT STYLES] **************************/
+.masthead {
+	background-color:white;
+    height:50px;
+}
+
+.logo {
+    background-color:white;
+    content:url("../images/logo.png"); 
+    float:left;
+    margin:10px;
+}
+
+.content {
+    display:block;
+    width:100%; height:100%;
+	background-image:-moz-linear-gradient(rgb(0,84,154) 1%,rgb(2,90,160) 16%,rgb(11,125,193) 100%); 
+	background-image:-webkit-gradient(linear,color-stop(0.01, rgb(0,84,154)),color-stop(0.16, rgb(2,90,160)),color-stop(1, rgb(11,125,193)));
+	background-image:-webkit-linear-gradient(rgb(0,84,154) 1%,rgb(2,90,160) 16%,rgb(11,125,193) 100%);
+	background-image:-ms-linear-gradient(rgb(0,84,154) 1%,rgb(2,90,160) 16%,rgb(11,125,193) 100%);
+	background-image:linear-gradient(rgb(0,84,154) 1%,rgb(2,90,160) 16%,rgb(11,125,193) 100%);
+	background:rgb(0,84,154) url("../images/swoops.png") no-repeat;
+    background-position:bottom center;
+    -webkit-background-size:cover; 
+    -moz-background-size:cover; 
+    background-size:cover;
+}
+
+.button, #buttonone, #buttontwo {
+    background-color:#a6a8aB;
+    background-image:-moz-linear-gradient(top, #fff 0%, #a6a8aB 85%);
+    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(85%,rgba(255,255,255,0)));
+    background-image:-webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 85%);
+    background-image:-ms-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 85%);
+    background-image:linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0)85%);
+	width:270px; height:62px;
+	border:1px solid white;
+	-moz-border-radius:8px;	
+    -webkit-border-radius:8px; 
+    border-radius:8px;
+	-moz-box-shadow:0px 1px 8px rgba(0,0,0,0.65); 
+    -webkit-box-shadow:0px 1px 8px rgba(0,0,0,0.65); 
+    box-shadow:0px 1px 8px rgba(0,0,0,0.65);
+	font-family:inherit;
+    font-size:36px;
+	line-height:62px;
+    text-align:center;
+	color:rgb(17,125,193);
+	cursor:pointer;
+	text-shadow:0 1px 0 white;
+    -moz-transition:all 0.2s ease; 
+    -webkit-transition:background-color 0.2s ease; 
+    transition:background-color 0.2s ease;
+}
+
+#buttonone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -85px;
+    margin-left: -130px;
+}
+
+#buttontwo {
+    position:absolute; 
+    top:50%; 
+    left:50%;
+    margin-left: -130px;
+    margin-top: 60px;
+}
+
+#buttonone.pressed {background-color:rgb(116, 117, 117); color:white; font-size: 50px; }
+#buttontwo.pressed { background-color:white; color:rgb(17,125,193); font-size: 40px;}
+
+/************************ TABLET **************************/
+@media handheld,  screen and (min-width: 600px) and (min-height:640px), 
+only screen and (min-height: 440px) and (min-width:900px) {
+
+    .masthead { height:75px; }
+
+    .logo {
+        content:url("../images/logo-lg.png"); 
+        margin:10px;   
+    }
+
+    .content { 
+        background:rgb(0,84,154) url("../images/swoops-lg.png") no-repeat;
+        background-position:bottom center;
+        -webkit-background-size:cover; -moz-background-size:cover; background-size:cover;
+    }
+
+    .button, #buttonone, #buttontwo {
+        width:530px; height:142px;
+        border-width:2px;
+        -moz-box-shadow:0px 1px 12px rgba(0,0,0,0.65);
+        -webkit-box-shadow:0px 1px 12px rgba(0,0,0,0.65);
+        box-shadow:0px 1px 12px rgba(0,0,0,0.65);
+        font-size:84px;
+        line-height:140px;
+        -moz-border-radius:16px; -webkit-border-radius:16px; border-radius:16px;
+        text-shadow:0 2px 0px rgb(255,255,255);
+    }
+    
+    #buttonone {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -160px;
+        margin-left: -230px;
+    }
+
+    #buttontwo {
+        position:absolute; 
+        top:50%; 
+        left:50%;
+        margin-top: 130px;
+        margin-left: -230px;
+    }
+    #buttonone.pressed {background-color:rgb(116, 117, 117); color:white; font-size: 120px; }
+    #buttontwo.pressed { background-color:white; color:rgb(17,125,193); font-size: 110px;}
+}

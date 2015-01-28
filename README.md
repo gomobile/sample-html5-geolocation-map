@@ -1,14 +1,13 @@
-sample-geolocation
-==================
-This sample gets the user's location using the device's geolocation services and then 
-plots their position every five seconds on a Google Map.  
-It takes advantage of the JavaScript bridge library to access the native features of the device.
+Button Sample
+=====
+The responsive button sample is a basic example of using HTML5 to give visual feedback to a button press.
 
 Intel(R) XDK 
 -------------------------------------------
-This sample is part of the Intel(R) XDK. Please sign up at http://software.intel.com/en-us/html5. 
-To see the technical detail of the sample, please visit the sample article page at 
-http://software.intel.com/en-us/articles/intel-xdk-geolocation-sample .
+This sample is part of the Intel(R) XDK tool. 
+Download the Intel(R) XDK  at http://software.intel.com/en-us/html5.
+To see the technical detail of the sample, please visit the sample article page 
+at http://software.intel.com/en-us/articles/intel-xdk-responsive-button-sample. 
 
 
 Important App Files
@@ -16,9 +15,18 @@ Important App Files
 * index.html
 * icon.png
 * screenshot.png
-* app.json
-* js/*
-* images/*
+* js/main.js
+* images/logo.png
+* images/logo-lg.png
+* images/swoops.png
+* images/swoops-lg.png
+* css/fonts.css
+* css/main.css
+* css/webfonts/Amble-Regular-webfont.eot
+* css/webfonts/Amble-Regular-webfont.svg
+* css/webfonts/Amble-Regular-webfont.ttf
+* css/webfonts/Amble-Regular-webfont.woff
+* css/webfonts/Apache License.txt
 
 License Information Follows
 ---------------------------
@@ -56,5 +64,4 @@ IMAGES
 all images are created by Intel Corp. 
 they are licensed under the Creative Commons Attribution 3.0 license 
 http://creativecommons.org/licenses/by/3.0/us/
-
 
