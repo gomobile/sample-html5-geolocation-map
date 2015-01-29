@@ -5,11 +5,11 @@
       "type": "Demo",
       "createDefaultBuildConfigs": true,
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-      "src": "https://edge-intel.s3.amazonaws.com/samples/production/sample-responsivebutton/sample.zip",
+      "src": "https://edge-intel.s3.amazonaws.com/samples/production/sample-geolocation/sample.zip",
       "sourceDirectory": "www",
-      "projectGuid": "185a36ac-6a93-4112-b785-a133341f6a04",
-      "lastModifiedDate": 1407976953567,
-      "creationDate": 1407976587318
+      "projectGuid": "76e13af6-ff42-43a4-a7b9-78ac1412e515",
+      "lastModifiedDate": 1418084794577,
+      "creationDate": 1407893953462
     },
     "sourceDirectory": "www",
     "cordovaPluginsDirectory": "plugins",
@@ -46,21 +46,28 @@
         "selectedState": "Included",
         "data": {},
         "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.geolocation",
+        "version": "0.3.7",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {}
       }
     ],
     "serviceMethods": [],
     "buildConfigurations": {
       "Android": {
         "platform_": "android",
+        "runtime_": "Cordova 3.x",
         "name_": "Android",
         "preferences_": {
-          "Orientation": "portrait",
           "android-minSdkVersion": "10",
-          "android-targetedSdkVersion": "19"
+          "android-targetSdkVersion": "19"
         },
         "isActive_": true,
-        "appName_": "Buttons",
-        "appID_": "xdk.sample.buttons",
+        "appName_": "GeolocationDemo",
+        "appID_": "xdk.sample.geolocationdemo",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
@@ -70,21 +77,20 @@
         "cordovaCLIVersion_": "3.5",
         "crosswalkVersion_": "stable",
         "appVersion_": "0.0.1",
-        "runtime_": "Cordova 3.x",
         "appVersionCode_": "1",
-        "appDescription_": "A basic example of a responsive HTML5 button."
+        "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device."
       },
       "Android-Crosswalk": {
         "platform_": "android",
+        "runtime_": "Crosswalk with Cordova 3.x",
         "name_": "Android-Crosswalk",
         "preferences_": {
-          "Orientation": "portrait",
           "android-minSdkVersion": "14",
-          "android-targetedSdkVersion": "19"
+          "android-targetSdkVersion": "19"
         },
         "isActive_": true,
-        "appName_": "Buttons",
-        "appID_": "xdk.sample.buttons",
+        "appName_": "GeolocationDemo",
+        "appID_": "xdk.sample.geolocationdemo",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
@@ -94,20 +100,19 @@
         "cordovaCLIVersion_": "3.5",
         "crosswalkVersion_": "stable",
         "appVersion_": "0.0.1",
-        "runtime_": "Crosswalk with Cordova 3.x",
-        "appVersionCode_": "1",
-        "appDescription_": "A basic example of a responsive HTML5 button."
+        "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device.",
+        "appVersionCode_": "1"
       },
       "iOS": {
         "platform_": "ios",
+        "runtime_": "Cordova 3.x",
         "name_": "iOS",
         "preferences_": {
-          "ios-target": "5",
-          "Orientation": "portrait"
+          "ios-target": "5"
         },
         "isActive_": true,
-        "appName_": "Buttons",
-        "appID_": "xdk.sample.buttons",
+        "appName_": "GeolocationDemo",
+        "appID_": "xdk.sample.geolocationdemo",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
@@ -117,18 +122,16 @@
         "cordovaCLIVersion_": "3.5",
         "crosswalkVersion_": "stable",
         "appVersion_": "0.0.1",
-        "runtime_": "Cordova 3.x",
-        "appDescription_": "A basic example of a responsive HTML5 button."
+        "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device."
       },
       "Windows8": {
         "platform_": "windows8",
+        "runtime_": "Cordova 3.x",
         "name_": "Windows8",
-        "preferences_": {
-          "Orientation": "portrait"
-        },
+        "preferences_": {},
         "isActive_": true,
-        "appName_": "Buttons",
-        "appID_": "xdk.sample.buttons",
+        "appName_": "GeolocationDemo",
+        "appID_": "xdk.sample.geolocationdemo",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
@@ -138,15 +141,15 @@
         "cordovaCLIVersion_": "3.5",
         "crosswalkVersion_": "stable",
         "appVersion_": "0.0.0.1",
-        "runtime_": "Cordova 3.x",
-        "appDescription_": "A basic example of a responsive HTML5 button."
+        "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device."
       },
       "WindowsPhone8": {
         "platform_": "wp8",
+        "runtime_": "Cordova 3.x",
         "name_": "WindowsPhone8",
         "preferences_": {},
         "isActive_": true,
-        "appName_": "Buttons",
+        "appName_": "GeolocationDemo",
         "appID_": "not.yet.specified",
         "appAccess_": "*",
         "icons_": [],
@@ -156,8 +159,7 @@
         "excludedLibraries_": "",
         "cordovaCLIVersion_": "3.5",
         "crosswalkVersion_": "stable",
-        "appVersion_": "1.0.0.0",
-        "runtime_": "Cordova 3.x"
+        "appVersion_": "1.0.0.0"
       }
     }
   }
