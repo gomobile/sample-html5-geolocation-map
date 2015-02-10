@@ -3,35 +3,18 @@
     "projectSettingsVersion": "1.2",
     "creationData": {
       "type": "Demo",
-      "createDefaultBuildConfigs": true,
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-      "src": "https://edge-intel.s3.amazonaws.com/samples/production/sample-geolocation/sample.zip",
-      "sourceDirectory": "www",
-			"projectGuid": "00000000-0000-0000-0000-000000000000",
-      "lastModifiedDate": 1418084794577,
-      "creationDate": 1407893953462
+      "src": "https://edge-intel.s3.amazonaws.com/jsapp/production/release-2014-ww51/sample-geolocation/sample.zip",
+      "projectGuid": "00000000-0000-0000-0000-000000000000",
+      "lastModifiedDate": 1423535919449,
+      "creationDate": 1423528061841
     },
     "sourceDirectory": "www",
     "cordovaPluginsDirectory": "plugins",
     "startFile": "index.html",
     "projectFiles": {},
     "projectDirectories": {},
-    "libraries": [
-      {
-        "name": "Cordova",
-        "version": "2.9.0",
-        "data": {
-          "default": true
-        }
-      },
-      {
-        "name": "intelXDK",
-        "version": "4.0.0",
-        "data": {
-          "default": true
-        }
-      }
-    ],
+    "libraries": [],
     "cordovaPlugins": [
       {
         "id": "org.apache.cordova.device",
@@ -63,17 +46,22 @@
         "name_": "Android",
         "preferences_": {
           "android-minSdkVersion": "10",
-          "android-targetSdkVersion": "19"
+          "android-targetSdkVersion": "19",
+          "android-installLocation": "auto"
         },
         "isActive_": true,
         "appName_": "GeolocationDemo",
         "appID_": "xdk.sample.geolocationdemo",
-        "appAccess_": "*",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
-        "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "iosProvs_": [],
         "cordovaCLIVersion_": "?",
         "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
@@ -86,17 +74,22 @@
         "name_": "Android-Crosswalk",
         "preferences_": {
           "android-minSdkVersion": "14",
-          "android-targetSdkVersion": "19"
+          "android-targetSdkVersion": "19",
+          "android-installLocation": "auto"
         },
         "isActive_": true,
         "appName_": "GeolocationDemo",
         "appID_": "xdk.sample.geolocationdemo",
-        "appAccess_": "*",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
-        "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "iosProvs_": [],
         "cordovaCLIVersion_": "?",
         "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
@@ -108,17 +101,22 @@
         "runtime_": "Cordova 3.x",
         "name_": "iOS",
         "preferences_": {
-          "ios-target": "5"
+          "ios-target": "6",
+          "ios-configuration": "adhoc"
         },
         "isActive_": true,
         "appName_": "GeolocationDemo",
         "appID_": "xdk.sample.geolocationdemo",
-        "appAccess_": "*",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
-        "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "iosProvs_": [],
         "cordovaCLIVersion_": "?",
         "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
@@ -132,35 +130,25 @@
         "isActive_": true,
         "appName_": "GeolocationDemo",
         "appID_": "xdk.sample.geolocationdemo",
-        "appAccess_": "*",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
+        "appAuthor_": "Intel XDK",
         "icons_": [],
         "splashes_": [],
-        "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "iosProvs_": [],
         "cordovaCLIVersion_": "?",
         "crosswalkVersion_": "?",
         "appVersion_": "0.0.0.1",
         "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device."
-      },
-      "WindowsPhone8": {
-        "platform_": "wp8",
-        "runtime_": "Cordova 3.x",
-        "name_": "WindowsPhone8",
-        "preferences_": {},
-        "isActive_": true,
-        "appName_": "GeolocationDemo",
-        "appID_": "not.yet.specified",
-        "appAccess_": "*",
-        "icons_": [],
-        "splashes_": [],
-        "iosProvs_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-				"cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
-        "appVersion_": "1.0.0.0"
       }
-    }
+    },
+    "gameAssetDirectory": "asset",
+    "gameMetadata": {},
+    "projectTags": []
   }
 }
