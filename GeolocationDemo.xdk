@@ -5,8 +5,8 @@
       "type": "Demo",
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "https://edge-intel.s3.amazonaws.com/jsapp/production/release-2014-ww51/sample-geolocation/sample.zip",
-      "projectGuid": "00000000-0000-0000-0000-000000000000",
-      "lastModifiedDate": 1423535919449,
+         "projectGuid": "00000000-0000-0000-0000-000000000000",
+      "lastModifiedDate": 1429656192242,
       "creationDate": 1423528061841
     },
     "sourceDirectory": "www",
@@ -18,38 +18,44 @@
     "cordovaPlugins": [
       {
         "id": "org.apache.cordova.device",
-        "version": "0.2.9",
+         "version": "?",
         "selectedState": "Included",
         "data": {},
-        "paramvals": {}
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
       },
       {
         "id": "org.apache.cordova.splashscreen",
-        "version": "0.3.0",
+         "version": "?",
         "selectedState": "Included",
         "data": {},
-        "paramvals": {}
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
       },
       {
         "id": "org.apache.cordova.geolocation",
-        "version": "0.3.7",
+         "version": "?",
         "selectedState": "Included",
         "data": {},
-        "paramvals": {}
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
       }
     ],
     "serviceMethods": [],
     "buildConfigurations": {
       "Android": {
         "platform_": "android",
-        "runtime_": "Cordova 3.x",
+         "runtime_": "Cordova 3.x",
         "name_": "Android",
         "preferences_": {
-          "android-minSdkVersion": "10",
+         "android-minSdkVersion": "10",
           "android-targetSdkVersion": "19",
           "android-installLocation": "auto"
         },
-        "isActive_": true,
+         "isActive_": true,
         "appName_": "GeolocationDemo",
         "appID_": "xdk.sample.geolocationdemo",
         "appAccess_": [
@@ -62,22 +68,23 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
+         "cordovaCLIVersion_": "?",
+         "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "appVersionCode_": "1",
+        "appAuthor_": "Intel XDK",
         "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device."
       },
       "Android-Crosswalk": {
         "platform_": "android",
-        "runtime_": "Crosswalk with Cordova 3.x",
+         "runtime_": "Crosswalk with Cordova 3.x",
         "name_": "Android-Crosswalk",
         "preferences_": {
-          "android-minSdkVersion": "14",
+         "android-minSdkVersion": "14",
           "android-targetSdkVersion": "19",
           "android-installLocation": "auto"
         },
-        "isActive_": true,
+         "isActive_": true,
         "appName_": "GeolocationDemo",
         "appID_": "xdk.sample.geolocationdemo",
         "appAccess_": [
@@ -90,21 +97,22 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
+         "cordovaCLIVersion_": "?",
+         "crosswalkVersion_": "?",
+         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1",
         "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device.",
         "appVersionCode_": "1"
       },
       "iOS": {
         "platform_": "ios",
-        "runtime_": "Cordova 3.x",
+         "runtime_": "Cordova 3.x",
         "name_": "iOS",
         "preferences_": {
-          "ios-target": "6",
+         "ios-target": "6",
           "ios-configuration": "adhoc"
         },
-        "isActive_": true,
+         "isActive_": true,
         "appName_": "GeolocationDemo",
         "appID_": "xdk.sample.geolocationdemo",
         "appAccess_": [
@@ -117,17 +125,18 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
+         "cordovaCLIVersion_": "?",
+         "crosswalkVersion_": "?",
+         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1",
         "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device."
       },
       "Windows8": {
         "platform_": "windows8",
-        "runtime_": "Cordova 3.x",
+         "runtime_": "Cordova 3.x",
         "name_": "Windows8",
         "preferences_": {},
-        "isActive_": true,
+         "isActive_": true,
         "appName_": "GeolocationDemo",
         "appID_": "xdk.sample.geolocationdemo",
         "appAccess_": [
@@ -135,16 +144,96 @@
             "origin": "*"
           }
         ],
-        "appAuthor_": "Intel XDK",
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+         "appAuthor_": "Intel XDK",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
+         "cordovaCLIVersion_": "?",
+         "crosswalkVersion_": "?",
         "appVersion_": "0.0.0.1",
         "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device."
+      },
+      "WebApp": {
+        "platform_": "webapp",
+         "runtime_": "W3C",
+        "name_": "WebApp",
+        "preferences_": {},
+         "isActive_": false,
+        "appName_": "GeolocationDemo",
+        "appID_": "not.yet.specified",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Firefox": {
+        "platform_": "firefoxos",
+         "runtime_": "W3C on Firefox OS",
+        "name_": "Firefox",
+        "preferences_": {},
+         "isActive_": false,
+        "appName_": "GeolocationDemo",
+        "appID_": "not.yet.specified",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Chrome": {
+        "platform_": "chromeos",
+         "runtime_": "W3C on Chrome OS",
+        "name_": "Chrome",
+        "preferences_": {},
+         "isActive_": false,
+        "appName_": "GeolocationDemo",
+        "appID_": "not.yet.specified",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Facebook": {
+        "platform_": "facebook",
+         "runtime_": "W3C on Facebook",
+        "name_": "Facebook",
+        "preferences_": {},
+         "isActive_": false,
+        "appName_": "GeolocationDemo",
+        "appID_": "not.yet.specified",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
       }
     },
     "gameAssetDirectory": "asset",
