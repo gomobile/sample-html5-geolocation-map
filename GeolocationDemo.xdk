@@ -1,80 +1,47 @@
 {
     "project": {
-        "projectSettingsVersion": "2.0.0",
+        "projectSettingsVersion": "1.2",
         "creationData": {
+            "type": "Demo",
             "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-            "src": "jsapp/sample-html5-geolocation-map/sample.zip",
+            "src": "https://edge-intel.s3.amazonaws.com/jsapp/production/release-2014-ww51/sample-geolocation/sample.zip",
             "projectGuid": "00000000-0000-0000-0000-000000000000",
-            "lastModifiedDate": 1440210181910,
-            "creationDate": 1440210165811
+            "lastModifiedDate": 1429656192242,
+            "creationDate": 1423528061841
         },
         "sourceDirectory": "www",
         "cordovaPluginsDirectory": "plugins",
         "startFile": "index.html",
         "projectFiles": {},
-        "projectDirectories": {
-            "www/xdk": {
-                "settings": {
-                    "project": {
-                        "XDK-generated": "true"
-                    }
-                }
-            }
-        },
+        "projectDirectories": {},
         "libraries": [],
         "cordovaPlugins": [
             {
-                "id": "cordova-plugin-device",
+                "id": "org.apache.cordova.device",
                 "version": "?",
                 "selectedState": "Included",
                 "data": {},
                 "paramvals": {},
                 "dependsOn": [],
-                "dependedBy": [],
-                "originType": "cordova.io",
-                "origin": "cordova-plugin-device",
-                "permissions": {},
-                "topLevel": true,
-                "gitref": "",
-                "name": "Device",
-                "description": "Cordova Device Plugin"
+                "dependedBy": []
             },
             {
-                "id": "cordova-plugin-splashscreen",
+                "id": "org.apache.cordova.splashscreen",
                 "version": "?",
                 "selectedState": "Included",
                 "data": {},
                 "paramvals": {},
                 "dependsOn": [],
-                "dependedBy": [],
-                "originType": "cordova.io",
-                "origin": "cordova-plugin-splashscreen",
-                "permissions": {},
-                "topLevel": true,
-                "gitref": "",
-                "name": "Splashscreen",
-                "description": "Cordova Splashscreen Plugin"
+                "dependedBy": []
             },
             {
-                "id": "cordova-plugin-geolocation",
+                "id": "org.apache.cordova.geolocation",
                 "version": "?",
                 "selectedState": "Included",
                 "data": {},
                 "paramvals": {},
                 "dependsOn": [],
-                "dependedBy": [],
-                "originType": "cordova.io",
-                "origin": "cordova-plugin-geolocation",
-                "permissions": {
-                    "android:name": [
-                        "android.permission.ACCESS_COARSE_LOCATION",
-                        "android.permission.ACCESS_FINE_LOCATION"
-                    ]
-                },
-                "topLevel": true,
-                "gitref": "",
-                "name": "Geolocation",
-                "description": "Cordova Geolocation Plugin"
+                "dependedBy": []
             }
         ],
         "serviceMethods": [],
@@ -89,22 +56,18 @@
                     "android-installLocation": "auto"
                 },
                 "isActive_": true,
-                "appName_": "Geolocation-Demo",
+                "appName_": "GeolocationDemo",
                 "appID_": "xdk.sample.geolocationdemo",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
+                "iosProvs_": [],
                 "cordovaCLIVersion_": "?",
                 "crosswalkVersion_": "?",
                 "appVersion_": "0.0.1",
@@ -122,22 +85,18 @@
                     "android-installLocation": "auto"
                 },
                 "isActive_": true,
-                "appName_": "Geolocation-Demo",
+                "appName_": "GeolocationDemo",
                 "appID_": "xdk.sample.geolocationdemo",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
+                "iosProvs_": [],
                 "cordovaCLIVersion_": "?",
                 "crosswalkVersion_": "?",
                 "appAuthor_": "Intel XDK",
@@ -154,18 +113,13 @@
                     "ios-configuration": "adhoc"
                 },
                 "isActive_": true,
-                "appName_": "Geolocation-Demo",
+                "appName_": "GeolocationDemo",
                 "appID_": "xdk.sample.geolocationdemo",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -183,23 +137,19 @@
                 "name_": "Windows8",
                 "preferences_": {},
                 "isActive_": true,
-                "appName_": "Geolocation-Demo",
+                "appName_": "GeolocationDemo",
                 "appID_": "xdk.sample.geolocationdemo",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
                 "appAuthor_": "Intel XDK",
+                "iosProvs_": [],
                 "cordovaCLIVersion_": "?",
                 "crosswalkVersion_": "?",
                 "appVersion_": "0.0.0.1",
@@ -211,18 +161,13 @@
                 "name_": "WebApp",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "Geolocation-Demo",
+                "appName_": "GeolocationDemo",
                 "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -236,18 +181,13 @@
                 "name_": "Firefox",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "Geolocation-Demo",
+                "appName_": "GeolocationDemo",
                 "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -261,18 +201,13 @@
                 "name_": "Chrome",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "Geolocation-Demo",
+                "appName_": "GeolocationDemo",
                 "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -286,55 +221,23 @@
                 "name_": "Facebook",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "Geolocation-Demo",
+                "appName_": "GeolocationDemo",
                 "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
                 "appAuthor_": "Intel XDK",
                 "appVersion_": "0.0.1"
-            },
-            "WP81": {
-                "platform_": "wp81",
-                "runtime_": "Cordova 3.x",
-                "name_": "WP81",
-                "preferences_": {},
-                "isActive_": true,
-                "appName_": "Geolocation-Demo",
-                "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "appVersion_": "0.0.0.1",
-                "cordovaCLIVersion_": "?",
-                "appAuthor_": "Intel XDK"
             }
         },
         "gameAssetDirectory": "asset",
         "gameMetadata": {},
-        "projectTags": [],
-        "testDirectory": "test"
+        "projectTags": []
     }
 }
