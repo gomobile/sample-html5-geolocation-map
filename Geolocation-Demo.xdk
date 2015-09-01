@@ -24,11 +24,11 @@
         "libraries": [],
         "cordovaPlugins": [
             {
-                "id": "org.apache.cordova.statusbar",
+                "id": "cordova-plugin-statusbar",
                 "name": "StatusBar",
                 "version": "?",
                 "originType": "cordova.io",
-                "origin": "org.apache.cordova.statusbar",
+                "origin": "cordova-plugin-statusbar",
                 "gitref": "",
                 "paramvals": {},
                 "selectedState": "Included",
