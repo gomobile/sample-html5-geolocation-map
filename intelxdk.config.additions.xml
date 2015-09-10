@@ -23,6 +23,14 @@
     <preference name="StatusBarStyle" value="lightcontent" />
 </platform>
 
+<platform name="android">
+    <!-- below requires the splash screen plugin -->
+    <!-- docs: https://github.com/apache/cordova-plugin-splashscreen -->
+    <preference name="SplashMaintainAspectRatio" value="false" />
+</platform>
+
 <!-- use this feature to add command-lines to be used by Crosswalk builds on device -->
 <!-- see http://peter.sh/experiments/chromium-command-line-switches/ for complete list -->
 <intelxdk:crosswalk xwalk-command-line="--disable-pull-to-refresh-effect" />
+<!-- ignore gpu blacklist for larger collection of gpu accelerated devices -->
+<intelxdk:crosswalk xwalk-command-line="--ignore-gpu-blacklist" />
