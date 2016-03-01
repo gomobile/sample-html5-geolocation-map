@@ -1,361 +1,366 @@
 {
-    "project": {
-        "projectSettingsVersion": "2.0.0",
-        "creationData": {
-            "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-            "src": "jsapp/sample-html5-geolocation-map/sample.zip",
-            "projectGuid": "00000000-0000-0000-0000-000000000000",
-            "lastModifiedDate": 1440210181910,
-            "creationDate": 1440210165811
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "creationData": {
+      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+      "src": "jsapp/sample-html5-geolocation-map/sample.zip",
+      "projectGuid": "00000000-0000-0000-0000-000000000000",
+      "lastModifiedDate": 1456813503259,
+      "creationDate": 1440210165811
+    },
+    "sourceDirectory": "www",
+    "cordovaPluginsDirectory": "plugins",
+    "startFile": "index.html",
+    "projectFiles": {},
+    "projectDirectories": {
+      "www/xdk": {
+        "settings": {
+          "project": {
+            "XDK-generated": "true"
+          }
+        }
+      }
+    },
+    "libraries": [],
+    "cordovaPlugins": [
+      {
+        "id": "cordova-plugin-statusbar",
+        "name": "StatusBar",
+        "version": "?",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-statusbar",
+        "gitref": "",
+        "paramvals": {},
+        "selectedState": "Included",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": "?",
+        "permissions": {},
+        "description": "Cordova StatusBar Plugin",
+        "data": {},
+        "dependedBy": [],
+        "checksum": "b92cbbef"
+      },
+      {
+        "id": "cordova-plugin-device",
+        "version": "?",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-device",
+        "permissions": {},
+        "topLevel": true,
+        "gitref": "",
+        "name": "Device",
+        "description": "Cordova Device Plugin",
+        "checksum": "1eae5d64"
+      },
+      {
+        "id": "cordova-plugin-splashscreen",
+        "version": "?",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-splashscreen",
+        "permissions": {},
+        "topLevel": true,
+        "gitref": "",
+        "name": "Splashscreen",
+        "description": "Cordova Splashscreen Plugin",
+        "checksum": "170efb68"
+      },
+      {
+        "id": "cordova-plugin-geolocation",
+        "version": "?",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-geolocation",
+        "permissions": {
+          "android:name": [
+            "android.permission.ACCESS_COARSE_LOCATION",
+            "android.permission.ACCESS_FINE_LOCATION"
+          ]
         },
-        "sourceDirectory": "www",
-        "cordovaPluginsDirectory": "plugins",
-        "startFile": "index.html",
-        "projectFiles": {},
-        "projectDirectories": {
-            "www/xdk": {
-                "settings": {
-                    "project": {
-                        "XDK-generated": "true"
-                    }
-                }
-            }
+        "topLevel": true,
+        "gitref": "",
+        "name": "Geolocation",
+        "description": "Cordova Geolocation Plugin",
+        "checksum": "2cb3083e"
+      }
+    ],
+    "serviceMethods": [],
+    "buildConfigurations": {
+      "Android-Crosswalk": {
+        "platform_": "android",
+        "runtime_": "Crosswalk with Cordova 3.x",
+        "name_": "Android-Crosswalk",
+        "preferences_": {
+          "android-minSdkVersion": "14",
+          "android-targetSdkVersion": "19",
+          "android-installLocation": "auto"
         },
-        "libraries": [],
-        "cordovaPlugins": [
-            {
-                "id": "cordova-plugin-statusbar",
-                "name": "StatusBar",
-                "version": "?",
-                "originType": "cordova.io",
-                "origin": "cordova-plugin-statusbar",
-                "gitref": "",
-                "paramvals": {},
-                "selectedState": "Included",
-                "dependsOn": [],
-                "topLevel": true,
-                "cordovaVersion": "?",
-                "permissions": {},
-                "description": "Cordova StatusBar Plugin",
-                "data": {},
-                "dependedBy": []
-             },
-            {
-                "id": "cordova-plugin-device",
-                "version": "?",
-                "selectedState": "Included",
-                "data": {},
-                "paramvals": {},
-                "dependsOn": [],
-                "dependedBy": [],
-                "originType": "cordova.io",
-                "origin": "cordova-plugin-device",
-                "permissions": {},
-                "topLevel": true,
-                "gitref": "",
-                "name": "Device",
-                "description": "Cordova Device Plugin"
-            },
-            {
-                "id": "cordova-plugin-splashscreen",
-                "version": "?",
-                "selectedState": "Included",
-                "data": {},
-                "paramvals": {},
-                "dependsOn": [],
-                "dependedBy": [],
-                "originType": "cordova.io",
-                "origin": "cordova-plugin-splashscreen",
-                "permissions": {},
-                "topLevel": true,
-                "gitref": "",
-                "name": "Splashscreen",
-                "description": "Cordova Splashscreen Plugin"
-            },
-            {
-                "id": "cordova-plugin-geolocation",
-                "version": "?",
-                "selectedState": "Included",
-                "data": {},
-                "paramvals": {},
-                "dependsOn": [],
-                "dependedBy": [],
-                "originType": "cordova.io",
-                "origin": "cordova-plugin-geolocation",
-                "permissions": {},
-                "topLevel": true,
-                "gitref": "",
-                "name": "Geolocation",
-                "description": "Cordova Geolocation Plugin"
-            }
-        ],
-        "serviceMethods": [],
-        "buildConfigurations": {
-            "Android-Crosswalk": {
-                "platform_": "android",
-                "runtime_": "Crosswalk with Cordova 3.x",
-                "name_": "Android-Crosswalk",
-                "preferences_": {
-                    "android-minSdkVersion": "14",
-                    "android-targetSdkVersion": "19",
-                    "android-installLocation": "auto"
-                },
-                "isActive_": true,
-                "appName_": "Geolocation-Demo",
-                "appID_": "xdk.sample.geolocationdemo",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*", 
-                        "https://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "cordovaCLIVersion_": "?",
-                "crosswalkVersion_": "?",
-                "appAuthor_": "Intel XDK",
-                "appVersion_": "0.0.1",
-                "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device.",
-                "appVersionCode_": "1"
-            },
-            "Android": {
-                "platform_": "android",
-                "runtime_": "Cordova 3.x",
-                "name_": "Android",
-                "preferences_": {
-                    "android-minSdkVersion": "14",
-                    "android-targetSdkVersion": "19",
-                    "android-installLocation": "auto"
-                },
-                "isActive_": true,
-                "appName_": "Geolocation-Demo",
-                "appID_": "xdk.sample.geolocationdemo",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*", 
-                        "https://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "cordovaCLIVersion_": "?",
-                "crosswalkVersion_": "?",
-                "appVersion_": "0.0.1",
-                "appVersionCode_": "1",
-                "appAuthor_": "Intel XDK",
-                "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device."
-            },
-            "iOS": {
-                "platform_": "ios",
-                "runtime_": "Cordova 3.x",
-                "name_": "iOS",
-                "preferences_": {
-                    "ios-target": "6",
-                    "ios-configuration": "adhoc"
-                },
-                "isActive_": true,
-                "appName_": "Geolocation-Demo",
-                "appID_": "xdk.sample.geolocationdemo",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*", 
-                        "https://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "iosProvs_": [],
-                "cordovaCLIVersion_": "?",
-                "crosswalkVersion_": "?",
-                "appAuthor_": "Intel XDK",
-                "appVersion_": "0.0.1",
-                "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device."
-            },
-            "Windows8": {
-                "platform_": "windows8",
-                "runtime_": "Cordova 3.x",
-                "name_": "Windows8",
-                "preferences_": {},
-                "isActive_": true,
-                "appName_": "Geolocation-Demo",
-                "appID_": "xdk.sample.geolocationdemo",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*", 
-                        "https://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "appAuthor_": "Intel XDK",
-                "cordovaCLIVersion_": "?",
-                "crosswalkVersion_": "?",
-                "appVersion_": "0.0.0.1",
-                "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device."
-            },
-            "WebApp": {
-                "platform_": "webapp",
-                "runtime_": "W3C",
-                "name_": "WebApp",
-                "preferences_": {},
-                "isActive_": false,
-                "appName_": "Geolocation-Demo",
-                "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*", 
-                        "https://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "appAuthor_": "Intel XDK",
-                "appVersion_": "0.0.1"
-            },
-            "Firefox": {
-                "platform_": "firefoxos",
-                "runtime_": "W3C on Firefox OS",
-                "name_": "Firefox",
-                "preferences_": {},
-                "isActive_": false,
-                "appName_": "Geolocation-Demo",
-                "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*", 
-                        "https://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "appAuthor_": "Intel XDK",
-                "appVersion_": "0.0.1"
-            },
-            "Chrome": {
-                "platform_": "chromeos",
-                "runtime_": "W3C on Chrome OS",
-                "name_": "Chrome",
-                "preferences_": {},
-                "isActive_": false,
-                "appName_": "Geolocation-Demo",
-                "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*", 
-                        "https://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "appAuthor_": "Intel XDK",
-                "appVersion_": "0.0.1"
-            },
-            "Facebook": {
-                "platform_": "facebook",
-                "runtime_": "W3C on Facebook",
-                "name_": "Facebook",
-                "preferences_": {},
-                "isActive_": false,
-                "appName_": "Geolocation-Demo",
-                "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*", 
-                        "https://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "appAuthor_": "Intel XDK",
-                "appVersion_": "0.0.1"
-            },
-            "WP81": {
-                "platform_": "wp81",
-                "runtime_": "Cordova 3.x",
-                "name_": "WP81",
-                "preferences_": {},
-                "isActive_": true,
-                "appName_": "Geolocation-Demo",
-                "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*", 
-                        "https://debug-software.intel.com/*"
-                    ],
-                    "intents": [
-                        "geo:*"
-                    ],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "appVersion_": "0.0.0.1",
-                "cordovaCLIVersion_": "?",
-                "appAuthor_": "Intel XDK"
-            }
+        "isActive_": true,
+        "appName_": "Geolocation-Demo",
+        "appID_": "xdk.sample.geolocationdemo",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "geo:*"
+          ],
+          "navigation": []
         },
-        "gameAssetDirectory": "asset",
-        "gameMetadata": {},
-        "projectTags": [],
-        "testDirectory": "test"
-    }
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "ACCESS_FINE_LOCATION",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1",
+        "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device.",
+        "appVersionCode_": "1"
+      },
+      "Android": {
+        "platform_": "android",
+        "runtime_": "Cordova 3.x",
+        "name_": "Android",
+        "preferences_": {
+          "android-minSdkVersion": "14",
+          "android-targetSdkVersion": "19",
+          "android-installLocation": "auto"
+        },
+        "isActive_": true,
+        "appName_": "Geolocation-Demo",
+        "appID_": "xdk.sample.geolocationdemo",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "geo:*"
+          ],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
+        "appVersion_": "0.0.1",
+        "appVersionCode_": "1",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device."
+      },
+      "iOS": {
+        "platform_": "ios",
+        "runtime_": "Cordova 3.x",
+        "name_": "iOS",
+        "preferences_": {
+          "ios-target": "6",
+          "ios-configuration": "adhoc"
+        },
+        "isActive_": true,
+        "appName_": "Geolocation-Demo",
+        "appID_": "xdk.sample.geolocationdemo",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "geo:*"
+          ],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "iosProvs_": [],
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1",
+        "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device."
+      },
+      "Windows8": {
+        "platform_": "windows8",
+        "runtime_": "Cordova 3.x",
+        "name_": "Windows8",
+        "preferences_": {},
+        "isActive_": true,
+        "appName_": "Geolocation-Demo",
+        "appID_": "xdk.sample.geolocationdemo",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "geo:*"
+          ],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
+        "appVersion_": "0.0.0.1",
+        "appDescription_": "This demonstration gets the user's location using the device's geolocation services and then plots their position every few seconds on a Google Map object.  It takes advantage of Cordova plugins to access the native features of the device."
+      },
+      "WebApp": {
+        "platform_": "webapp",
+        "runtime_": "W3C",
+        "name_": "WebApp",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "Geolocation-Demo",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "http://debug-software.intel.com/*",
+            "https://debug-software.intel.com/*"
+          ],
+          "intents": [
+            "geo:*"
+          ],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Firefox": {
+        "platform_": "firefoxos",
+        "runtime_": "W3C on Firefox OS",
+        "name_": "Firefox",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "Geolocation-Demo",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "http://debug-software.intel.com/*",
+            "https://debug-software.intel.com/*"
+          ],
+          "intents": [
+            "geo:*"
+          ],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Chrome": {
+        "platform_": "chromeos",
+        "runtime_": "W3C on Chrome OS",
+        "name_": "Chrome",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "Geolocation-Demo",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "http://debug-software.intel.com/*",
+            "https://debug-software.intel.com/*"
+          ],
+          "intents": [
+            "geo:*"
+          ],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Facebook": {
+        "platform_": "facebook",
+        "runtime_": "W3C on Facebook",
+        "name_": "Facebook",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "Geolocation-Demo",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "http://debug-software.intel.com/*",
+            "https://debug-software.intel.com/*"
+          ],
+          "intents": [
+            "geo:*"
+          ],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "WP81": {
+        "platform_": "wp81",
+        "runtime_": "Cordova 3.x",
+        "name_": "WP81",
+        "preferences_": {},
+        "isActive_": true,
+        "appName_": "Geolocation-Demo",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "http://debug-software.intel.com/*",
+            "https://debug-software.intel.com/*"
+          ],
+          "intents": [
+            "geo:*"
+          ],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.0.1",
+        "cordovaCLIVersion_": "?",
+        "appAuthor_": "Intel XDK"
+      }
+    },
+    "gameAssetDirectory": "asset",
+    "gameMetadata": {},
+    "projectTags": [],
+    "testDirectory": "test"
+  }
 }

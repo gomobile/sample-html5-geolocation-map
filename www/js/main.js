@@ -15,7 +15,7 @@ function drawMap() {
     myLatLng = latlng;
     var mapOptions = {
         center: latlng,
-        zoom:7,
+        zoom: 5,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         zoomControl: true,
         zoomControlOptions: {
@@ -24,7 +24,13 @@ function drawMap() {
         }
     };
     if (boolTripTrack === true) {
-        _map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+        if(google.maps){
+            _map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+        }
+        
+        else {
+            alert("Unable to display map.");
+        }
     }
 }
 //40.7655,-73.97204 = NYC
@@ -78,6 +84,9 @@ function onDeviceReady() {
         if (navigator.geolocation !== null) {
             document.getElementById("map_canvas").style.height = screen.height + "px";
             navigator.geolocation.watchPosition(suc, fail, options);
+        }
+        else {
+            alert("navigator.geolocation == null")
         }
     } catch (e) {
         alert(e.message);
