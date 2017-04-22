@@ -1,0 +1,195 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "creationData": {
+      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+      "projectGuid": "00000000-0000-0000-0000-000000000000",
+      "lastModifiedDate": 1471821344527,
+      "creationDate": 1455582738857
+    },
+    "sourceDirectory": "www",
+    "startFile": "index.html",
+    "projectFiles": {},
+    "projectDirectories": {},
+    "libraries": [],
+    "serviceMethods": [],
+    "cordovaPluginsDirectory": "plugins",
+    "cordovaPlugins": [
+      {
+        "id": "cordova-plugin-device",
+        "version": "?",
+        "originType": "cordova.io",
+        "selectedState": "Included"
+      },
+      {
+        "id": "cordova-plugin-splashscreen",
+        "version": "?",
+        "originType": "cordova.io",
+        "selectedState": "Included"
+      },
+      {
+        "id": "cordova-plugin-statusbar",
+        "version": "?",
+        "originType": "cordova.io",
+        "selectedState": "Included"
+      },
+      {
+        "id": "cordova-plugin-geolocation",
+        "version": "?",
+        "originType": "cordova.io",
+        "selectedState": "Included"
+      }
+    ],
+    "buildConfigurations": {
+      "Android": {
+        "platform_": "android",
+        "runtime_": "Crosswalk with Cordova 3.x",
+        "name_": "Android",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
+        "preferences_": {
+          "android-minSdkVersion": "14",
+          "android-targetSdkVersion": "21",
+          "android-installLocation": "auto",
+          "Fullscreen": false,
+          "Orientation": "portrait",
+          "android-signed": true
+        },
+        "isActive_": true,
+        "appName_": "Intel XDK Sample",
+        "appID_": "xdk.intel.sample",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": ["*"],
+          "intents": ["geo:*"],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "certificateId_": "",
+        "appVersion_": "0.0.1",
+        "appVersionCode_": "1",
+        "appDescription_": "Intel XDK sample",
+        "appAuthor_": "Intel XDK"
+      },
+      "iOS": {
+        "platform_": "ios",
+        "runtime_": "Cordova 3.x",
+        "name_": "iOS",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
+        "preferences_": {
+          "exit-on-suspend": false,
+          "deployment-target": "8.0",
+          "ios-configuration": "adhoc",
+          "Fullscreen": false,
+          "Orientation": "portrait"
+        },
+        "isActive_": true,
+        "appName_": "Intel XDK Sample",
+        "appID_": "xdk.intel.sample",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": ["*"],
+          "intents": ["geo:*"],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "iosProvs_": [],
+        "certificateId_": "",
+        "appVersion_": "0.0.1",
+        "appVersionCode_": "1",
+        "appDescription_": "Intel XDK sample",
+        "appAuthor_": "Intel XDK"
+      },
+      "Windows8": {
+        "platform_": "windows8",
+        "runtime_": "Cordova 3.x",
+        "name_": "Windows8",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
+        "preferences_": {
+          "windows-publisher-display-name": "",
+          "windows-publisher-id": "",
+          "Fullscreen": false,
+          "Orientation": "portrait"
+        },
+        "isActive_": true,
+        "appName_": "Intel XDK Sample",
+        "appID_": "xdk.intel.sample",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": ["*"],
+          "intents": ["geo:*"],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "certificateId_": "",
+        "appVersion_": "0.0.0.1",
+        "appVersionCode_": "1",
+        "appDescription_": "Intel XDK sample",
+        "appAuthor_": "Intel XDK"
+      },
+      "WebApp": {
+        "platform_": "webapp",
+        "runtime_": "W3C",
+        "name_": "WebApp",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "Intel XDK Sample",
+        "appID_": "xdk.intel.sample",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "appDescription_": "Intel XDK sample",
+        "appAuthor_": "Intel XDK"
+      },
+      "Chrome": {
+        "platform_": "chromeos",
+        "runtime_": "W3C on Chrome OS",
+        "name_": "Chrome",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "Intel XDK Sample",
+        "appID_": "xdk.intel.sample",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "appDescription_": "Intel XDK sample",
+        "appAuthor_": "Intel XDK"
+      }
+    },
+    "gameAssetDirectory": "asset",
+    "gameMetadata": {},
+    "projectTags": [
+      "XDK-disallow-legacy-whitelist"
+    ],
+    "testDirectory": "test"
+  }
+}

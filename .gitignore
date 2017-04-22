@@ -1,0 +1,27 @@
+# Ignore Cordova/PhoneGap CLI directories
+
+# In essence, use git to manage everything but the *.xdk file, www directory,
+# and other '!/' files and directories listed below.
+
+# In some projects you might be tempted to keep the plugins directory under
+# git, but you are better off not doing that and making sure your plugins are
+# well specified for retrieval into a fresh copy of your project. If one of
+# your plugins is a customized plugin, you should maintain that custom plugin
+# in a separate repo and then add it as a "local" plugin.
+
+/*
+!/www
+!/docs
+!/package-assets
+!/bower_components
+!/README*
+!/LICENSE*
+!/*.xdk
+!/*.xdke
+!/intelxdk.config.additions.xml
+!/app.json
+!/icon.png
+!/screenshot.png
+!/bower.json
+!/.gitignore
+!/.jscodehints
