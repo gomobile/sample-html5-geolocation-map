@@ -43,12 +43,12 @@
     "buildConfigurations": {
       "Android": {
         "platform_": "android",
-        "runtime_": "Crosswalk with Cordova 3.x",
+        "runtime_": "Cordova 3.x",
         "name_": "Android",
         "cordovaCLIVersion_": "?",
         "crosswalkVersion_": "?",
         "preferences_": {
-          "android-minSdkVersion": "14",
+          "android-minSdkVersion": "20",
           "android-targetSdkVersion": "21",
           "android-installLocation": "auto",
           "Fullscreen": false,
