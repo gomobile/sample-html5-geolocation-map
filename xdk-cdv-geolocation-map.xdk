@@ -48,7 +48,7 @@
         "cordovaCLIVersion_": "?",
         "crosswalkVersion_": "?",
         "preferences_": {
-          "android-minSdkVersion": "20",
+          "android-minSdkVersion": "19",
           "android-targetSdkVersion": "21",
           "android-installLocation": "auto",
           "Fullscreen": false,
