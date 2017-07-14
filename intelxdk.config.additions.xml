@@ -1,8 +1,3 @@
-<!-- Change the debuggable preference to true to build a remote CDT debuggable app for -->
-<!-- Crosswalk apps on Android 4.0+ devices and Cordova apps on Android 4.4+ devices. -->
-<preference name="debuggable" value="false" />
-<!-- IMPORTANT: set the debuggable preference to false before you build for the store! -->
-
 <!-- 'value' = number of milliseconds to display the splash screen in a Cordova build. -->
 <!-- This preference only affects Cordova builds for Crosswalk and Android. -->
 <!-- <preference name="SplashScreenDelay" value="2000" /> -->
@@ -31,6 +26,4 @@
 
 <!-- use this feature to add command-lines to be used by Crosswalk builds on device -->
 <!-- see http://peter.sh/experiments/chromium-command-line-switches/ for complete list -->
-<intelxdk:crosswalk xwalk-command-line="--disable-pull-to-refresh-effect" />
-<!-- ignore gpu blacklist for larger collection of gpu accelerated devices -->
-<intelxdk:crosswalk xwalk-command-line="--ignore-gpu-blacklist" />
+<preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect --ignore-gpu-blacklist" />
